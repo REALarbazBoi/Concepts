@@ -20,3 +20,16 @@ except (IndexError, ValueError)as msg:
     print("invalid index", msg)
 
 print("terminated gracefully")
+
+def division(a,b):
+    if b != 0:
+        c = a / b
+        return c
+    else:
+        raise ZeroDivisionError
+
+
+try:
+    division(10,20)
+except:
+    print("zero division error")
