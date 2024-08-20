@@ -1,3 +1,6 @@
+with open("my.data", "wb") as f:
+    f.write(b"abcdefghij")
+
 with open("my.data","rb") as f:
     print(f.read(2).decode())
     f.seek(3,0)
